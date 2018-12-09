@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="style/css.css" />
+<script type="text/javascript" src="script/jquery-1.7.2.js"></script>
+<script type="text/javascript">
+	$(function() {
+		//获取焦点
+		$("#query").focus(function() {
+			//1.获取当前文本框输入的内容
+			var content = $.trim(this.value);
+			//2.判断文本框输入内容是否为默认值
+			if(content == this.defaultValue) {
+				//3.如果是默认值则删除
+				this.value = "";
+			}
+		}).blur(function() {
+			//失去焦点
+			
+		})
+	});
+</script>
+</head>
+<body>
+
+	<img src="image/logo.gif" />
+
+	<input type="text" id="query" value="在这里输入查询关键字" />
+	
+	<div id="resultDiv"></div>
+
+</body>
+</html>

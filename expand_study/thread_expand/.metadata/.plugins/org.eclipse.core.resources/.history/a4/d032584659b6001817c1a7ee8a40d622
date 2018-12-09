@@ -1,0 +1,16 @@
+package com.yonyou12;
+
+import java.util.Hashtable;
+import java.util.Vector;
+
+public class ThreadDemo {
+
+	public static void main(String[] args) {
+		// 线程安全的类
+		StringBuffer sb = new StringBuffer();
+		Vector<String> v = new Vector<String>();
+		Hashtable<String, String> h = new Hashtable<String, String>();
+
+	}
+
+}

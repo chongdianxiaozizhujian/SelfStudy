@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="style/css.css" />
+<script type="text/javascript" src="script/jquery-1.7.2.js"></script>
+<script type="text/javascript">
+
+	$(function(){
+		
+		$("#query").focus(function(){
+			
+			//1.获取当前文本框中输入的内容
+			var content = $.trim(this.value);
+			
+			//2.判断文本框内容是否为默认值
+			if(content == this.defaultValue) {
+				//3.如果是默认值则删除
+				this.value = "";
+				
+			}
+			
+		}).blur(function(){
+			
+			//1.获取当前文本框中输入的内容
+			var content = $.trim(this.value);
+			
+			//2.判断文本框内容是否为空字符串
+			if(content == "") {
+				//3.如果是恢复为默认值
+				this.value = this.defaultValue;
+			}
+			
+		}).change(function(){
+			//1.获取查询关键字
+			var keyWords = $.trim(this.value);
+			
+			//slideUp()函数：将jQuery对象在页面上的显示慢慢收起
+			$("#resultDiv").slideUp(500,function(){
+				//2.发送Ajax请求：将查询关键字以请求参数的形式发送给Servlet
+				//url:发送请求地址。
+				//data:待发送 Key/value 参数。
+				//callback:发送成功时回调函数。
+				//type:返回内容格式，xml, html, script, json, text, _default。
+				$.post("QueryServlet",{"queryStr":keyWords},function(data){
+					
+					//3.获取响应数据
+					//在填充数据之前将结果div清空
+					$("#resultDiv").empty();
+					
+					//4.将响应数据以良好样式显示在文本框下面
+					if(data.length == 0) {
+						$("#resultDiv").append("<div>没有相关的查询结果</div>");
+					}else{
+						//此时返回的data是一个JSON数组
+						for(var i = 0; i < data.length; i++) {
+							//解析结果数据：alert(data[i].companyId+" "+data[i].companyName);
+							//将解析得到的结果数据填充到#resultDiv中
+							$("#resultDiv").append("<div>"+data[i].companyName+"</div>");
+						}
+					}
+					//将结果DIV显示出来
+					$("#resultDiv").slideDown(500);
+					
+				},"json");
+				
+			});
+			
+		});
+		
+	});
+
+</script>
+</head>
+<body>
+
+	<img src="image/logo.gif" />
+
+	<input type="text" id="query" value="在这里输入查询关键字" />
+	
+	<div id="resultDiv"></div>
+
+</body>
+</html>

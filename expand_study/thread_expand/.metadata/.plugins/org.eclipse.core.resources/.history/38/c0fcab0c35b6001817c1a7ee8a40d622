@@ -1,0 +1,5 @@
+package com.yonyou03;
+
+public class ThreadPriority extends Thread {
+
+}

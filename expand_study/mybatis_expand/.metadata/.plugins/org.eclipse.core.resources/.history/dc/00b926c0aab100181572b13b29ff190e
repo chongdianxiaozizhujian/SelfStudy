@@ -1,0 +1,7 @@
+package com.yonyou.bean;
+
+public class ConditionUser {
+	private String name;
+	private int minAge;
+	private int maxAge;
+}

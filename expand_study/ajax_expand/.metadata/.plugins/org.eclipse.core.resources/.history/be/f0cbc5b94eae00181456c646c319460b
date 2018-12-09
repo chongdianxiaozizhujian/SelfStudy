@@ -1,0 +1,14 @@
+package com.yonyou.ajax.servlet;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import org.junit.Test;
+
+public class GsonTest {
+
+	@Test
+	public void testJSON() {
+		Map<String, String> map = new HashMap<>();
+	}
+}

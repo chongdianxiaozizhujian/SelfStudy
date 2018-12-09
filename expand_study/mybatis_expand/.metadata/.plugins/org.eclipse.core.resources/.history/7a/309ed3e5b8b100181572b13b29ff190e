@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace相对于此mapper的唯一标识 -->
+<mapper namespace="com.yonyou.test9.userMapper">
+    <!-- 
+    	CALL mybatis.get_user_count(0, @user_count);
+     -->
+     <select id="getUserCount" parameterMap="getUserCountMap" statementType="CALLABLE">
+     	CALL mybatis.get_user_count(?, ?);
+     </select>
+     <parameterMap type="java.util.Map" id="getUserCountMap">
+     	<parameter property="sexId" mode="IN" jdbcType="INTEGER"/>
+     </parameterMap>
+</mapper>

@@ -1,0 +1,10 @@
+package com.yonyou05;
+
+public class GetThread implements Runnable {
+
+	@Override
+	public void run() {
+		
+	}
+
+}

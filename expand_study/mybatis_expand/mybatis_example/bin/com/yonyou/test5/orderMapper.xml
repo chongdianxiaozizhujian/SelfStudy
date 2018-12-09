@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace相对于此mapper的唯一标识 -->
+<mapper namespace="com.yonyou.test5.orderMapper">
+    <!-- 字段名和实体类属性名不相同
+                  字段名:
+          order_id
+          order_no
+          order_price
+                 属性名:
+          id
+	      orderNo
+	      price
+     -->
+	<select id="getOrder" parameterType="int" resultType="Order">
+		select * from orders where order_id = #{id}
+	</select>
+	<!-- sql语句中定义别名 -->
+	<select id="getOrder1" parameterType="int" resultType="Order">
+		select order_id id, order_no orderNo, order_price price from orders where order_id = #{id}
+	</select>
+	<!-- resultMap -->
+	<select id="getOrder2" parameterType="int" resultMap="getOrder2Map">
+		select * from orders where order_id = #{id}
+	</select>
+	<resultMap type="Order" id="getOrder2Map">
+		<id property="id" column="order_id"/>
+		<result property="orderNo" column="order_no"/>
+		<result property="price" column="order_price"/>
+	</resultMap>
+</mapper>

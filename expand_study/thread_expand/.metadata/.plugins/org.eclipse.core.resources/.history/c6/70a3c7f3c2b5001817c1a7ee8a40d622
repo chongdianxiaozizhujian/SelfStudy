@@ -1,0 +1,7 @@
+package com.yonyou01;
+
+public class MyThreadDemo {
+	public static void main(String[] args) {
+		MyThread my1 = new MyThread();
+	}
+}

@@ -1,0 +1,5 @@
+package com.yonyou.suggest.bean;
+
+public class Company {
+
+}

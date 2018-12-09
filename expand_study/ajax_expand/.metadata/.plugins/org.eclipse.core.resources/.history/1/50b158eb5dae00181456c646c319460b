@@ -1,0 +1,21 @@
+package com.yonyou.suggest;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class QueryServlet extends HttpServlet{
+	private static final long serialVersionUID = 1L;
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		//1.从请求参数中获取查询关键字
+		String queryStr = request.getParameter("queryStr");
+		System.out.println(queryStr);
+		//2.根据查询关键字获取查询结果
+		
+		//3.将查询结果转换为json数据格式
+		//4.将json数据作为响应数据返回
+	}
+}

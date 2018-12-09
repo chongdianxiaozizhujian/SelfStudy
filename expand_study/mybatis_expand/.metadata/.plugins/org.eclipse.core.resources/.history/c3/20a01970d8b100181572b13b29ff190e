@@ -1,0 +1,5 @@
+package com.yonyou.mapper;
+
+public interface UserMapper {
+
+}

@@ -1,0 +1,13 @@
+package com.yonyou01;
+
+public class SellTicket implements Runnable {
+
+	// ∂®“Â∆±
+	private int tickets = 100;
+
+	@Override
+	public void run() {
+
+	}
+
+}

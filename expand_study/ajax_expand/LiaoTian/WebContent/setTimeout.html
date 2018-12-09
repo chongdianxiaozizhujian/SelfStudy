@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	window.onload = function() {
+		var showTimeEle = document.getElementById("showTime");
+		showTime();
+		function showTime() {
+			showTimeEle.innerHTML = new Date().toLocaleString();
+			setTimeout(showTime, 1000);
+		}
+	};
+</script>
+</head>
+<body>
+	<p id="showTime"></p>
+</body>
+</html>

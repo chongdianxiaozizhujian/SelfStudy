@@ -1,0 +1,11 @@
+package com.yonyou04;
+
+public class SetThread implements Runnable {
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

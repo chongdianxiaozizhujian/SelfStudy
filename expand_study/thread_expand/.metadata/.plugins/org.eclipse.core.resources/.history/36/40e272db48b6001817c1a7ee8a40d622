@@ -1,0 +1,16 @@
+package com.yonyou09;
+
+public class SellTicket implements Runnable {
+	
+	// 定义100张票
+		private int tickets = 100;
+		//创建锁对象
+		private Object obj = new Object();
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

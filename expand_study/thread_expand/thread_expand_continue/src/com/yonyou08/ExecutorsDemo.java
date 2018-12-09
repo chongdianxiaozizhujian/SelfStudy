@@ -1,0 +1,19 @@
+package com.yonyou08;
+
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+public class ExecutorsDemo {
+	public static void main(String[] args) {
+		// 创建线程池对象
+		// public static ExecutorService newFixedThreadPool(int nThreads)
+		ExecutorService pool = Executors.newFixedThreadPool(2);
+//		pool.submit(new MyRunnable());
+//		pool.submit(new MyRunnable());
+		pool.submit(new MyThread());
+		pool.submit(new MyThread());
+
+		// 结束线程池
+		pool.shutdown();
+	}
+}

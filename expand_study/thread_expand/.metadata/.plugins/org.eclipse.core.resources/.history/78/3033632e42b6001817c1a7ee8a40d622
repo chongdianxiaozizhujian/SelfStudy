@@ -1,0 +1,5 @@
+package com.yonyou06;
+
+public class SellTicket extends Thread {
+	private static int tickets = 100;
+}

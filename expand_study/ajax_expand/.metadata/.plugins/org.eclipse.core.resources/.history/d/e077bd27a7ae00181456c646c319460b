@@ -1,0 +1,49 @@
+package com.yonyou.liaotian.utils;
+
+import java.sql.Connection;
+import java.sql.SQLException;
+
+import javax.sql.DataSource;
+
+import com.mchange.v2.c3p0.ComboPooledDataSource;
+
+public class JDBCUtils {
+	
+	//鏁版嵁婧愭槸涓�涓潪甯告秷鑰楀唴瀛樼殑瀵硅薄锛屽鏋滄瘡涓�娆¤幏鍙栨暟鎹簱杩炴帴閮藉垱寤轰竴涓柊鐨勶紝浼氬緢蹇�楀敖鍐呭瓨
+	//鎵�浠ュ０鏄庝负static锛屼繚璇佸叾鍦ㄩ」鐩繍琛屾椂鍙湁涓�涓疄渚�
+	private static DataSource dataSource = new ComboPooledDataSource("webDataSource");
+	
+	/**
+	 * 浠庢暟鎹簱杩炴帴姹犱腑鑾峰彇鏁版嵁搴撹繛鎺�
+	 * @return
+	 */
+	public static Connection getConnection() {
+		Connection connection = null;
+		
+		try {
+			connection = dataSource.getConnection();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		
+		return connection;
+	}
+	
+	/**
+	 * 閲婃斁鏁版嵁搴撹繛鎺�
+	 * @param connection
+	 */
+	public static void releaseConnection(Connection connection) {
+		
+		//鍒ゆ柇鏄惁涓虹┖锛岄伩鍏嶇┖鎸囬拡寮傚父
+		if(connection != null) {
+			try {
+				connection.close();
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+		}
+		
+	}
+
+}

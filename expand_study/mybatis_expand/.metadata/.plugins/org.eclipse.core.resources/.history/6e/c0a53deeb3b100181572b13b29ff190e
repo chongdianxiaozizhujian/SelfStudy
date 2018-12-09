@@ -1,0 +1,5 @@
+package com.yonyou.bean;
+
+public class PUser {
+
+}

@@ -1,0 +1,6 @@
+package com.yonyou02;
+
+public class DieLock extends Thread {
+	private boolean flag;
+	
+}

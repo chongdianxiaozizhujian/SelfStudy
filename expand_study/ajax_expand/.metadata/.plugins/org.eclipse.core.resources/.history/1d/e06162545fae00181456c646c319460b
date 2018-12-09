@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="style/css.css" />
+<script type="text/javascript" src="script/jquery-1.7.2.js"></script>
+<script type="text/javascript">
+	$(function() {
+		//获取焦点
+		$("#query").focus(function() {
+			//1.获取当前文本框输入的内容
+			var content = $.trim(this.value);
+			//2.判断文本框输入内容是否为默认值
+			if(content == this.defaultValue) {
+				//3.如果是默认值则删除
+				this.value = "";
+			}
+		}).blur(function() {
+			//失去焦点
+			var content = $.trim(this.value);
+			//1.判断文本框输入内容是否为空字符串
+			if(content == "") {
+				this.value = this.defaultValue;
+			}
+		}).change(function() {
+			//文本框输入内容改变时发送ajax请求
+			//1.获取查询关键字
+			var keyWords = $.trim(this.value);
+			//2.发送ajax请求
+			//url:发送请求地址。
+			//data:待发送 Key/value 参数。
+			//callback:发送成功时回调函数。
+			//type:返回内容格式，xml, html, script, json, text, _default。
+			$.post("QueryServlet",{"queryStr":keyWords},function(data) {
+				$("#resultDiv").empty();
+				for(var i = 0; i < data.length; i++) {
+					//将解析得到的结果填充到#resultDiv中
+					$("#resultDiv").append("<div>"+data[i].companyName+"</div>");
+				}
+				$("#resultDiv").show();
+			},"json");
+		});
+	});
+</script>
+</head>
+<body>
+
+	<img src="image/logo.gif" />
+
+	<input type="text" id="query" value="在这里输入查询关键字" />
+	
+	<div id="resultDiv"></div>
+
+</body>
+</html>

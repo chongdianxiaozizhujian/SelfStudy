@@ -1,0 +1,7 @@
+package com.yonyou07;
+
+public class Student {
+	private String name;
+	private int age;
+	private boolean flag; // true表示有数据,false表示无数据,默认false
+}

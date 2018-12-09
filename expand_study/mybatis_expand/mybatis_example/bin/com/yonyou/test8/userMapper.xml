@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace相对于此mapper的唯一标识 -->
+<mapper namespace="com.yonyou.test8.userMapper">
+    <select id="getUser" parameterType="ConditionUser" resultType="User">
+    	select * from d_user where 
+    	<if test="name != null">
+    		name like CONCAT('%',#{name},'%') and 
+    	</if>
+    	age between #{minAge} and #{maxAge}
+    </select>
+</mapper>

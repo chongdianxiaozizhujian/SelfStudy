@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<properties resource="db.properties" />
+	<!-- 配置实体类的别名 -->
+	<typeAliases>
+	    <!-- 单独起别名 -->
+		<!-- <typeAlias type="com.yonyou.bean.User" alias="_User"/> -->
+		<package name="com.yonyou.bean" />
+	</typeAliases>
+	<environments default="development">
+		<environment id="development">
+			<transactionManager type="JDBC" />
+			<dataSource type="POOLED">
+				<!-- <property name="driver" value="com.mysql.jdbc.Driver" />
+				<property name="url" value="jdbc:mysql://localhost:3306/mybatis" />
+				<property name="username" value="root" />
+				<property name="password" value="root" /> -->
+				<property name="driver" value="${driver}" />
+				<property name="url" value="${url}" />
+				<property name="username" value="${username}" />
+				<property name="password" value="${password}" />
+			</dataSource>
+		</environment>
+	</environments>
+	<mappers>
+		<mapper resource="com/yonyou/test1/userMapper.xml" />
+		<mapper resource="com/yonyou/test2/userMapper.xml" />
+		<mapper class="com.yonyou.test3.UserMapper" />
+		<mapper resource="com/yonyou/test4/userMapper.xml" />
+		<mapper resource="com/yonyou/test5/orderMapper.xml" />
+		<mapper resource="com/yonyou/test6/classMapper.xml" />
+		<mapper resource="com/yonyou/test7/classMapper.xml" />
+		<mapper resource="com/yonyou/test8/classMapper.xml" />
+	</mappers>
+</configuration>

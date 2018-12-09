@@ -1,0 +1,7 @@
+package com.yonyou03;
+
+public class ThreadPriorityDemo {
+	ThreadPriority tp1 = new ThreadPriority();
+	ThreadPriority tp2 = new ThreadPriority();
+	ThreadPriority tp3 = new ThreadPriority();
+}

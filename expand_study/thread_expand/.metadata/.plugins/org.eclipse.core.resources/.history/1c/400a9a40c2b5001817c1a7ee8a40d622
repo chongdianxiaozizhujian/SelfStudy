@@ -1,0 +1,5 @@
+package com.yonyou01;
+
+public class MyThread extends Thread {
+	
+}
