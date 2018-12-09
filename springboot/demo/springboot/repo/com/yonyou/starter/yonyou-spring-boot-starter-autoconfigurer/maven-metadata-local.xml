@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.yonyou.starter</groupId>
+  <artifactId>yonyou-spring-boot-starter-autoconfigurer</artifactId>
+  <versioning>
+    <versions>
+      <version>0.0.1-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20180629004842</lastUpdated>
+  </versioning>
+</metadata>
