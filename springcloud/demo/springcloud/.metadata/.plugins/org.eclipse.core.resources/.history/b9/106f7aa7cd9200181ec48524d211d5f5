@@ -1,0 +1,5 @@
+package com.yonyou.springcloud.rest;
+
+public class ConfigClientRest {
+
+}

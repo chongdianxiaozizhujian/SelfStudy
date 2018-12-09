@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.yonyou.springcloud.DeptProvider8001_App&apos; to &apos;DeptProvider8003_App&apos;&#x0D;&#x0A;- Original project: &apos;microservicecloud-provider-dept-8003&apos;&#x0D;&#x0A;- Original element: &apos;com.yonyou.springcloud.DeptProvider8001_App&apos;&#x0D;&#x0A;- Renamed element: &apos;com.yonyou.springcloud.DeptProvider8003_App&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;DeptProvider8001_App&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java&lt;com.yonyou.springcloud{DeptProvider8001_App.java[DeptProvider8001_App" matchStrategy="1" name="DeptProvider8003_App" qualified="false" references="true" similarDeclarations="false" stamp="1531960161543" textual="false" version="1.0"/>
+</session>

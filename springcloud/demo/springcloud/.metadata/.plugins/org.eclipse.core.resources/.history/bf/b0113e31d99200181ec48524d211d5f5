@@ -1,0 +1,7 @@
+package com.yonyou.springcloud;
+
+@SpringBootApplication
+@EnableEurekaServer
+public class Config_Git_EurekaServerApplication {
+
+}

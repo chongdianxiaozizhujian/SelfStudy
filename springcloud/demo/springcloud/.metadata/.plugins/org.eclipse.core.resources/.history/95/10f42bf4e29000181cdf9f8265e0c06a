@@ -1,0 +1,5 @@
+package com.yonyou.springcloud;
+
+public class DeptConsumer_DashBoard_App {
+
+}

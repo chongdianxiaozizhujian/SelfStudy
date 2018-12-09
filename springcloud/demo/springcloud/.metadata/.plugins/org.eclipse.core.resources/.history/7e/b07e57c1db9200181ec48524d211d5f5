@@ -1,0 +1,5 @@
+package com.yonyou.springcloud;
+
+public class DeptProvider8001_Config_App {
+
+}

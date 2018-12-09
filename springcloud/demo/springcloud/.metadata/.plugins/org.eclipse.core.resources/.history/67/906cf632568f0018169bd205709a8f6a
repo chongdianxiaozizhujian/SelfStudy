@@ -1,0 +1,5 @@
+package com.yonyou.springcloud.service;
+
+public class DeptClientServiceFallbackFactory {
+
+}

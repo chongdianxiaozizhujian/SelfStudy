@@ -1,0 +1,13 @@
+.settings/
+target/
+*.classpath
+*.project
+MANIFEST.MF
+.mymetadata
+/bin/
+.lock
+.ini
+.plugins/
+*.iml
+.idea/
+

@@ -1,0 +1,9 @@
+package com.yonyou.springcloud;
+
+import org.springframework.boot.SpringApplication;
+
+public class DeptConsumer_DashBoard_App {
+	public static void main(String[] args) throws Exception {
+		SpringApplication.run(DeptConsumer_DashBoard_App.class, args);
+	}
+}

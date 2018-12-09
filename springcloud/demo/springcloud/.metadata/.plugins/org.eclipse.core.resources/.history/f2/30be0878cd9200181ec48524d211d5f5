@@ -1,0 +1,9 @@
+package com.yonyou.springcloud;
+
+import org.springframework.boot.SpringApplication;
+
+public class ConfigClient_3355_StartSpringCloudApp {
+	public static void main(String[] args) throws Exception {
+		SpringApplication.run(ConfigClient_3355_StartSpringCloudApp.class, args);
+	}
+}

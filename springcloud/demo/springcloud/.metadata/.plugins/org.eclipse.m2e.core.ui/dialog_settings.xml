@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+			<item value="com.yonyou.springcloud"/>
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+			<item value="microservicecloud-config-dept-client-8001"/>
+			<item value="microservicecloud"/>
+			<item value="microservicecloud-config-eureka-client-7001"/>
+			<item value="microservicecloud-config-client-3355"/>
+			<item value="microservicecloud-config-3344"/>
+			<item value="microservicecloud-zuul-gateway-9527"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+		<list key="ciManagementUrl">
+		</list>
+		<list key="ciManagementSystem">
+		</list>
+		<list key="issueManagementSystem">
+		</list>
+		<list key="issueManagementUrl">
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenModuleWizardParentPage">
+		<list key="moduleName">
+			<item value="microservicecloud-config-dept-client-8001"/>
+			<item value="microservicecloud-config-eureka-client-7001"/>
+			<item value="microservicecloud-config-client-3355"/>
+			<item value="microservicecloud-config-3344"/>
+			<item value="microservicecloud-zuul-gateway-9527"/>
+			<item value="microservicecloud-consumer-hystrix-dashboard"/>
+			<item value="microservicecloud-provider-dept-hystrix-8001"/>
+			<item value="microservicecloud-consumer-dept-feign"/>
+			<item value="microservicecloud-provider-dept-8003"/>
+			<item value="microservicecloud-provider-dept-8002"/>
+			<item value="microservicecloud-eureka-7003"/>
+			<item value="microservicecloud-eureka-7002"/>
+			<item value="microservicecloud-eureka-7001"/>
+			<item value="microservicecloud-consumer-dept-80"/>
+			<item value="microservicecloud-provider-dept-8001"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenCheckoutLocationPage">
+		<list key="scmUrl">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="E:\springcloud\microservicecloud"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+			<item value="org.microservicecloud.config.dept.client.8001"/>
+		</list>
+		<list key="groupId">
+			<item value="com.yonyou.springcloud"/>
+		</list>
+		<list key="artifactId">
+			<item value="microservicecloud-config-dept-client-8001"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+</section>
