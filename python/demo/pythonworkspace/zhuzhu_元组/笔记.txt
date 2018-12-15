@@ -1,0 +1,23 @@
+元组中只包含一个元素时，需要在元素后面添加逗号，否则括号会被当作运算符使用
+元组中的元素值是不允许删除的，但我们可以使用del语句来删除整个元组
+要创建一个内容也不变的tuple怎么做？那就必须保证tuple的每一个元素本身也不能变。
+
+uple元素不可变有一种特殊情况，当元素是可变对象时。
+对象内部属性是可以修改的！tuple的不可变限制只是在一个纬度上：
+元素的类型。实现理解，tuple的元素所保存的内容（数值或内存地址）
+是不允许修改的，但地址映射的对象自身是可以修改的。
+
+
+字符串是一种特殊的tuple,支持部分tuple的运算符
+
+namedtuple(具名元组)
+import collections
+
+#two ways to define the field name for namedtuple
+#User = collections.namedtuple('User', ['name', 'age', 'id'])
+User = collections.namedtuple('User', 'name age id')
+user = User('Tom', '22', '1')
+
+print(user)
+输出结果
+User(name='Tom', age='22', id='1')

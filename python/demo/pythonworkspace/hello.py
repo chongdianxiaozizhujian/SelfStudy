@@ -1,0 +1,7 @@
+name = input("请输入您的姓名:")
+print("python 世界欢迎您",name)
+a = int(input('请输入乘数a:'))
+print(a)
+b = int(input('请输入乘数b:'))
+print(b)
+print("a * b = ", a*b)

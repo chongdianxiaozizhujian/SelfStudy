@@ -1,0 +1,17 @@
+1.python manage.py makemigrations
+相当于在该app下建立 migrations目录，并记录下你所有的关于modes.py
+的改动，比如0001_initial.py， 但是这个改动还没有作用到数据库文件
+2.python manage.py migrate
+将该改动作用到数据库文件，比如产生table，修改字段的类型等。
+3.python manage.py runserver/python manage.py runserver 8000
+启动django服务
+4.wsgi.py
+-- Python语言定义的web服务器和web服务程序或者框架之间的一种简单而通用的接口。
+-- WSGI Web Server Gateway Interface
+5.What Python version can I use with Django?
+Django version	              Python versions
+1.11	                      2.7, 3.4, 3.5, 3.6
+2.0	                          3.4, 3.5, 3.6, 3.7
+2.1, 2.2	                  3.5, 3.6, 3.7
+
+
